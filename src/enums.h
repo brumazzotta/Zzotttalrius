@@ -273,6 +273,14 @@ enum PlayerSex_t : uint8_t {
 	PLAYERSEX_LAST = PLAYERSEX_MALE
 };
 
+enum PlayerRace_t : uint8_t {
+	RACE_HUMAN = 0,
+	RACE_ORC = 1,
+	RACE_DWARF = 2,
+	RACE_ELF = 3,
+	RACE_MINOTAUR = 4,
+};
+
 enum Vocation_t : uint16_t {
 	VOCATION_NONE,
 	VOCATION_SORCERER = 1 << 0,

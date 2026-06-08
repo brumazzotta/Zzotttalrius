@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\repos\Zzotttalrius-master\Zzotttalrius-master\src\race.cpp" />
     <ClCompile Include="..\src\actions.cpp" />
     <ClCompile Include="..\src\ban.cpp" />
     <ClCompile Include="..\src\baseevents.cpp" />
@@ -217,6 +218,7 @@
     <ClCompile Include="..\src\wildcardtree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\repos\Zzotttalrius-master\Zzotttalrius-master\src\race.h" />
     <ClInclude Include="..\src\account.h" />
     <ClInclude Include="..\src\actions.h" />
     <ClInclude Include="..\src\ban.h" />

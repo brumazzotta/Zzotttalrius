@@ -32,6 +32,7 @@
 #include "guild.h"
 #include "groups.h"
 #include "town.h"
+#include "race.h"
 
 class BehaviourDatabase;
 class House;
@@ -330,6 +331,13 @@ class Player final : public Creature, public Cylinder
 		void setSex(PlayerSex_t);
 		uint64_t getExperience() const {
 			return experience;
+		}
+
+		RaceType_t getRace() const final {
+			return race;
+		}
+		void setRace(RaceType_t r) {
+			race = r;
 		}
 
 		time_t getLastLoginSaved() const {
@@ -1039,6 +1047,7 @@ class Player final : public Creature, public Cylinder
 		chaseMode_t chaseMode = CHASEMODE_STANDSTILL;
 		fightMode_t fightMode = FIGHTMODE_ATTACK;
 		AccountType_t accountType = ACCOUNT_TYPE_NORMAL;
+		PlayerRace_t race = RACE_HUMAN;
 
 		bool secureMode = false;
 		bool ghostMode = false;
